@@ -2,6 +2,7 @@
 session_start();
 include("../../Model/dbConnection.php");
 
+
 if (isset($_POST["logIn"])) {
     $loginEmail = $_POST["email"];
     $loginPwd = $_POST["pwd"];
