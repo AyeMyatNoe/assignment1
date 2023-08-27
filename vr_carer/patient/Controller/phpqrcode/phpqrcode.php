@@ -1159,7 +1159,7 @@
         {
             try {
 
-                $bs = new QRbitrtream();
+                $bs = new QRbitstream();
                 
                 $bs->appendNum(4, 0x8);
                 $bs->appendNum(QRspec::lengthIndicator(QR_MODE_KANJI, $version), (int)($this->size / 2));
@@ -2123,7 +2123,7 @@
             if($ret < 0)
                 return -1;
 
-            return $run;
+            return $p;
         }
 
         //----------------------------------------------------------------------
@@ -2937,7 +2937,7 @@
         //----------------------------------------------------------------------
         public function getCode()
         {
-            $ret;
+            $ret = 0 ;
 
             if($this->count < $this->dataLength) {
                 $row = $this->count % $this->blocks;
@@ -3051,7 +3051,7 @@
         //----------------------------------------------------------------------
         public function encodeString8bit($string, $version, $level)
         {
-            if(string == NULL) {
+            if($string == NULL) {
                 throw new Exception('empty string!');
                 return NULL;
             }
