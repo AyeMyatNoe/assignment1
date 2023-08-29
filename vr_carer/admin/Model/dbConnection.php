@@ -1,5 +1,5 @@
 <?php
-$hostname = "vrcarer-do-user-14484910-0.b.db.ondigitalocean.com";
+$hostname ="vrcarer-do-user-14484910-0.b.db.ondigitalocean.com";
 $port = 25060;
 $dbname = "assignment_db";
 $uname = "doadmin";
